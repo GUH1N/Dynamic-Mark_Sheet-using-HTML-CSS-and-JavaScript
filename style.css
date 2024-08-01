@@ -1,0 +1,92 @@
+body
+{
+    display: flex;
+    justify-content: center;
+}
+
+.container
+{
+    margin: 30px;
+    width: 100%;
+    border: 3px solid;
+    padding: 15px;
+    background-color: lightgoldenrodyellow;
+}
+
+.header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sr_no
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.qr_code
+{
+    margin: 10px;
+}
+
+.c_text
+{
+    text-align: center;
+    font-weight: 700;
+}
+
+.asm
+{
+    color: red;
+}
+
+.tb1
+{
+    width: 100%;
+    text-align: center;
+}
+
+input
+{
+    width: 100%;
+}
+
+th,td,table
+{
+    border: 2px solid rgb(127, 64, 64);
+    border-collapse: collapse;
+}
+
+span
+{
+    color: brown;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.th
+{
+    text-align: center;
+}
+
+.footer
+{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    *
+    {
+        padding: 0px;
+        font-size: 10px;
+    }
+
+    img
+    {
+        width: 100px;
+        height: 100px;
+    }
+}

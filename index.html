@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark_Sheet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header d-flex justify-content-between">
+            <div class="sr_no">
+                <p>Sr.NO. <span style="color: red;"> 00000000</span></p>
+            </div>
+            <div class="logo">
+                <img src="./Image/logo.jpg" alt="Logo" width="150" height="200">
+            </div>
+            <div class="qr_code">
+                <img src="./Image/QR_Code.png" alt="QR_Code" width="150" height="150">
+            </div>
+        </div>
+        <br>
+        <div class="body">
+            <h2 class="c_text">HINDUSTHAN COLLEGE OF ENGINEERING AND TECHNOLOGY</h2>
+            <p class="c_text">Valley Campus, Pollachi Highway, Coimbatore - 641 032, Tamil Nadu, INDIA.</p>
+            <p class="c_text">An Autonomous Institution Recognized by Government of India</p>
+            <h1 class="asm c_text">Annual Statement of Marks</h1>
+            <table class="table tb1">
+                <tr>
+                    <td colspan="6"> <span class="th">Name of the Candidate </span><br>G.P.Guhaa Priyan</td>
+                    <td colspan="6"> <span class="th">Department</span> <br>ARTIFICAL INTELLIGENCE AND MACHINE LEARNING</td>
+                </tr>
+                <tr>
+                    <td colspan="3"> <span class="th"> Reg.No. </span><br>720721115015</td>
+                    <td colspan="3"> <span class="th">Enrollment No.</span> <br>(Enrollment Number)</td>
+                    <td colspan="6"><span class="th">Authorised Training Center Name with Code </span><br>(Authorised Training Center Name) <br>(Authorised Training Center Code)</td>
+                </tr>
+            </table>
+            <table class="table tb2">
+                <tr>
+                    <td colspan="2" rowspan="2" class="th"><span>Subject Code</span></td>
+                    <td colspan="4" rowspan="2" class="th"><span>Subject Name</span></td>
+                    <td colspan="1" rowspan="2" class="th"><span>Max Marks</span></td>
+                    <td colspan="3" class="th"><span>Marks Obtained </span></td>
+                    <td colspan="2" rowspan="2" class="th"><span>Result</span></td>
+                </tr>
+                <tr>
+                    <td class="th"><span>Theory</span></td>
+                    <td class="th"><span>Practical</span></td>
+                    <td class="th"><span>Total</span></td>
+                </tr>
+                <tr>
+                    <td colspan="2">21AI7201</td>
+                    <td colspan="4">Cloud Computing</td>
+                    <td>100</td>
+                    <td><input type="number" id="sub_1_t"></td>
+                    <td>******</td>
+                    <td id="t_1"></td>
+                    <td colspan="2" id="r_1"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">21AI7202</td>
+                    <td colspan="4">AI Analyst</td>
+                    <td>100</td>
+                    <td><input type="number" id="sub_2_t"></td>
+                    <td>******</td>
+                    <td id="t_2"></td>
+                    <td colspan="2" id="r_2"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">21AI7203</td>
+                    <td colspan="4">Ethics and Policy Issues in AI computing</td>
+                    <td>100</td>
+                    <td><input type="number" id="sub_3_t"></td>
+                    <td>******</td>
+                    <td id="t_3"></td>
+                    <td colspan="2" id="r_3"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">21AI7205</td>
+                    <td colspan="4">Web and Social Media Mining</td>
+                    <td>100</td>
+                    <td><input type="number" id="sub_4_t"></td>
+                    <td>******</td>
+                    <td id="t_4"></td>
+                    <td colspan="2" id="r_4"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">21AI7251</td>
+                    <td colspan="4">Deep Learning</td>
+                    <td>100</td>
+                    <td><input type="number" id="sub_5_t"></td>
+                    <td><input type="number" id="sub_5_p"></td>
+                    <td id="t_5"></td>
+                    <td colspan="2" id="r_5"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">21AI7001</td>
+                    <td colspan="4">Cloud Compution Lab</td>
+                    <td>100</td>
+                    <td>******</td>
+                    <td><input type="number" id="sub_6_p"></td>
+                    <td id="t_6"></td>
+                    <td colspan="2" id="r_6"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">21AI7901</td>
+                    <td colspan="4">Project Phase - 1</td>
+                    <td>100</td>
+                    <td>******</td>
+                    <td><input type="number" id="sub_7_p"></td>
+                    <td id="t_7"></td>
+                    <td colspan="2" id="r_7"></td>
+                </tr>
+                <tr>
+                    <td colspan="12"><span>Grand Total :</span><p id="g_t"></p></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><span>Month and Year of Examination</span></td>
+                    <td colspan="3"><span>No.of Subject Offered</span></td>
+                    <td colspan="2"><span>Result</span></td>
+                    <td colspan="2"><span>Percentage</span></td>
+                    <td colspan="2"><span>Grade</span></td>
+                </tr>
+                <tr>
+                    <td colspan="3">May 2024</td>
+                    <td colspan="3">5T + 2P = 7</td>
+                    <td colspan="2" id="result"></td>
+                    <td colspan="2" id="percent"></td>
+                    <td colspan="2" id="grade"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="footer d-flex justify-content-between">
+            <div class="date">
+                <p><span>Date: </span>(Date of Result)</p>
+            </div>
+            <div class="sign">
+                <p>(Signature of Deputy <br>Control of Examination)  <br><span>Deputy Controller of Examination</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('input[type="number"]').forEach(input => {
+            input.addEventListener('input', calculateTotal);
+        });
+
+        function calculateTotal() {
+            const sub_1_t = parseInt(document.getElementById("sub_1_t").value) || 0;
+            const sub_2_t = parseInt(document.getElementById("sub_2_t").value) || 0;
+            const sub_3_t = parseInt(document.getElementById("sub_3_t").value) || 0;
+            const sub_4_t = parseInt(document.getElementById("sub_4_t").value) || 0;
+            const sub_5_t = parseInt(document.getElementById("sub_5_t").value) || 0;
+            const sub_5_p = parseInt(document.getElementById("sub_5_p").value) || 0;
+            const sub_6_p = parseInt(document.getElementById("sub_6_p").value) || 0;
+            const sub_7_p = parseInt(document.getElementById("sub_7_p").value) || 0;
+
+            if (sub_1_t > 100 || sub_2_t > 100 || sub_3_t > 100 || sub_4_t > 100 || sub_5_t > 50 || sub_5_p > 50 || sub_6_p > 100 || sub_7_p > 100) {
+                alert("Invalid input! Marks cannot exceed 100.");
+                return;
+            }
+
+            const total_1 = sub_1_t;
+            const total_2 = sub_2_t;
+            const total_3 = sub_3_t;
+            const total_4 = sub_4_t;
+            const total_5 = sub_5_t + sub_5_p;
+            const total_6 = sub_6_p;
+            const total_7 = sub_7_p;
+
+            document.getElementById("t_1").textContent = total_1;
+            document.getElementById("t_2").textContent = total_2;
+            document.getElementById("t_3").textContent = total_3;
+            document.getElementById("t_4").textContent = total_4;
+            document.getElementById("t_5").textContent = total_5;
+            document.getElementById("t_6").textContent = total_6;
+            document.getElementById("t_7").textContent = total_7;
+
+            document.getElementById("r_1").textContent = total_1 >= 50 ? "Pass" : "Fail";
+            document.getElementById("r_2").textContent = total_2 >= 50 ? "Pass" : "Fail";
+            document.getElementById("r_3").textContent = total_3 >= 50 ? "Pass" : "Fail";
+            document.getElementById("r_4").textContent = total_4 >= 50 ? "Pass" : "Fail";
+            document.getElementById("r_5").textContent = total_5 >= 50 ? "Pass" : "Fail";
+            document.getElementById("r_6").textContent = total_6 >= 50 ? "Pass" : "Fail";
+            document.getElementById("r_7").textContent = total_7 >= 50 ? "Pass" : "Fail";
+
+            const grandTotal = total_1 + total_2 + total_3 + total_4 + total_5 + total_6 + total_7;
+            document.getElementById("g_t").textContent = grandTotal;
+
+            const percentage = (grandTotal / 700) * 100;
+            document.getElementById("percent").textContent = percentage.toFixed(2) + "%";
+
+            if (percentage >= 90) {
+                document.getElementById("grade").textContent = "A+";
+            } else if (percentage >= 80) {
+                document.getElementById("grade").textContent = "A";
+            } else if (percentage >= 70) {
+                document.getElementById("grade").textContent = "B+";
+            } else if (percentage >= 60) {
+                document.getElementById("grade").textContent = "B";
+            } else if (percentage >= 50) {
+                document.getElementById("grade").textContent = "C";
+            } else {
+                document.getElementById("grade").textContent = "F";
+            }
+
+            const passSubjects = [total_1, total_2, total_3, total_4, total_5, total_6, total_7].filter(total => total >= 50).length;
+            document.getElementById("result").textContent = passSubjects === 7 ? "Pass" : "Fail";
+        }
+    </script>
+</body>
+</html>
